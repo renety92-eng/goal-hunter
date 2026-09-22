@@ -1,0 +1,45 @@
+*{box-sizing:border-box}
+:root{color-scheme:dark;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+body{margin:0;background:#070b18;color:#edf2ff}
+button{font:inherit}
+.app{width:min(1100px,100%);margin:auto;padding:22px 14px 50px}
+.hero{position:relative;padding:8px 2px 22px}
+.brand{font-weight:900;letter-spacing:.5px;font-size:20px;color:#f5f7ff}
+.brand span{color:#49a9ff}
+.hero h1{font-size:clamp(34px,7vw,64px);line-height:.98;margin:24px 0 10px;letter-spacing:-2px}
+.hero p{margin:0;color:#98a3bd;font-size:16px}
+.date-card{position:absolute;right:0;top:0;border:1px solid #214b7c;border-radius:16px;padding:10px 14px;text-align:right;background:#0b1428;color:#dbe8ff}
+.date-card small{color:#7f8ca9}
+.market-tabs{display:flex;gap:10px;overflow:auto;padding:10px 0 16px}
+.market{white-space:nowrap;border:1px solid #263552;background:#10182c;color:#cbd5ee;padding:12px 16px;border-radius:14px;cursor:pointer}
+.market.active{background:#233b78;border-color:#5d86e6;color:#fff}
+.updated{color:#78849f;font-size:13px;margin:2px 0 14px}
+.section{border:1px solid #263552;border-radius:20px;background:#0d1426;overflow:hidden;margin:14px 0;box-shadow:0 12px 35px #0003}
+.section.best10{border-color:#075f6b}
+.section.best7{border-color:#512b9b}
+.section.quick{border-color:#164b85}
+.section-head{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:17px 18px;border-bottom:1px solid #24314a}
+.section-title{font-size:25px;font-weight:900;margin:0}
+.section-sub{color:#8793ad;margin:3px 0 0;font-size:14px}
+.count{border-radius:999px;padding:7px 11px;background:#173c78;color:#cfe1ff;font-size:13px;font-weight:800}
+.best10 .count{background:#075b58}
+.best7 .count{background:#542b9e}
+.table-wrap{overflow:auto}
+table{width:100%;border-collapse:collapse;min-width:760px}
+th,td{padding:11px 14px;text-align:left;border-bottom:1px solid #19243a;font-size:14px}
+th{color:#71809f;font-size:12px;text-transform:uppercase;letter-spacing:.5px;background:#0a1222}
+td{color:#dbe4f7}
+.market-pill{display:inline-block;border-radius:999px;padding:5px 9px;font-weight:800;font-size:12px}
+.gg{background:#073b82;color:#9fd0ff}
+.halves{background:#3e1977;color:#d8b8ff}
+.pct{font-weight:900;color:#6cf0b5}
+.empty{padding:25px 18px;color:#8d99b1}
+footer{display:flex;justify-content:space-between;gap:15px;color:#74809a;font-size:13px;padding:20px 3px}
+footer strong{color:#d9e3f7}
+@media(max-width:650px){
+  .app{padding:16px 10px 35px}
+  .date-card{position:static;width:max-content;margin-left:auto}
+  .hero h1{font-size:42px;margin-top:18px}
+  .section-title{font-size:22px}
+  footer{flex-direction:column}
+}
