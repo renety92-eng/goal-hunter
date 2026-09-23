@@ -94,9 +94,9 @@ const DAILY_DATA = {
 
 const MARKET_LABELS = {
 
-  GG2+: "GG2+ — both teams 2+",
+  "GG2+": "GG2+ — both teams 2+",
 
-  BOTH_HALVES: "Both Teams Score Both Halves"
+  "BOTH_HALVES": "Both Teams Score Both Halves"
 
 };
 
