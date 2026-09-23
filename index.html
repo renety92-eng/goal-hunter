@@ -10,6 +10,8 @@
 
   <meta name="theme-color" content="#080d1d">
 
+  <meta name="description" content="Goal Hunter - GG2+ and Both Teams Score Both Halves">
+
   <title>Goal Hunter</title>
 
   <link rel="stylesheet" href="styles.css">
@@ -20,24 +22,124 @@
 
   <main class="app">
 
+    <!-- HEADER -->
+
     <header class="hero">
 
-      <div class="brand">⚽ GOAL <span>HUNTER</span></div>
+      <div class="top-bar">
 
-      <div class="date-card">
+        <div class="brand">
 
-        <div id="date">—</div>
+          ⚽ GOAL <span>HUNTER</span>
 
-        <small>Ghana Time</small>
+        </div>
+
+        <div class="date-card">
+
+          <div id="date">—</div>
+
+          <small>Ghana Time</small>
+
+        </div>
 
       </div>
 
-      <h1>GG2+ &amp; Both Halves</h1>
+      <div class="hero-content">
 
-      <p>High-scoring leagues only · Ghana time · daily update</p>
+        <h1>GG2+ &amp;<br>Both Halves</h1>
+
+        <p>
+
+          High-scoring leagues only · Ghana time · daily update
+
+        </p>
+
+      </div>
 
     </header>
 
-    <nav class="market-tabs">
+    <!-- MARKET FILTERS -->
 
-      <button class="market active" data-m
+    <nav class="market-tabs" aria-label="Market filters">
+
+      <button
+
+        class="market active"
+
+        data-market="all"
+
+        type="button">
+
+        All Markets
+
+      </button>
+
+      <button
+
+        class="market"
+
+        data-market="GG2+"
+
+        type="button">
+
+        GG2+ — both teams 2+
+
+      </button>
+
+      <button
+
+        class="market"
+
+        data-market="BOTH_HALVES"
+
+        type="button">
+
+        Both Teams Score Both Halves
+
+      </button>
+
+    </nav>
+
+    <!-- LAST UPDATED -->
+
+    <div id="updated" class="updated">
+
+      Last updated: —
+
+    </div>
+
+    <!-- DAILY CONTENT -->
+
+    <div id="app">
+
+      <div class="loading">
+
+        Loading Goal Hunter...
+
+      </div>
+
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+      <strong>⚽ Goal Hunter</strong>
+
+      <span>
+
+        Model percentages are estimates, not guarantees.
+
+      </span>
+
+    </footer>
+
+  </main>
+
+  <!-- JAVASCRIPT -->
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
